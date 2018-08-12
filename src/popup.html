@@ -1,0 +1,83 @@
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<script src="static/jquery-v3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/index.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{padding: 0; margin: 0;}
+			a{text-decoration: none; color: #333; font-weight: 400;}
+			button{display: inline-block; height: 28px;line-height: 28px; padding: 0 18px;background-color: #009688;color: #fff;white-space: nowrap;text-align: center;font-size: 14px;border: none;border-radius: 2px;cursor: pointer;}
+			h4{position: relative;height: 50px;line-height: 50px;padding: 0 15px;border-bottom: 1px dotted #E9E9E9;color: #333; border-radius: 2px 2px 0 0;font-size: 14px;}
+			
+			.warm{color: #FF5722;}
+			.bg-warm{background-color: #FF5722;}
+			.num{display: inline-block; width: 40px; margin-right: 3px; text-align: right; font-weight: bold;font-size: 14px;}
+			.main{margin: 10px; width: 500px; margin-top: 20px;}
+			.header{border: 1px solid #eee; padding: 10px; padding-bottom: 13px; border-radius: 5px;}
+			.fly-nav-avatar{vertical-align: middle; height: 40px; line-height: 40px; padding: 0 20px; transition: all .3s; -webkit-transition: all .3s;}
+			.fly-nav-avatar cite{font-style: normal; color: #999; font-size: 18px;}
+			.fly-nav-avatar img{width: 36px;height: 36px;margin-right: 10px;border-radius: 100%;vertical-align: middle;}
+			
+			.fly-list{border-radius: 2px;background-color: #fff;}
+			.fly-list li{position: relative;height: 45px;line-height: 22px; padding: 15px 15px 15px 75px; border-bottom: 1px dotted #e2e2e2;}
+			.fly-list li:last-child{border-bottom: none;}
+			.fly-avatar{position: absolute;left: 15px;top: 15px;}
+			.fly-avatar img{display: block;width: 45px;height: 45px;margin: 0;border-radius: 2px;}
+			.fly-list li h2{height: 26px; font-size: 0;}
+			.fly-list li h2 .layui-badge {height: 16px;line-height: 16px;padding: 0 5px;margin-right: 10px;font-size: 12px;border: 1px solid #5FB878;background: none;color: #5FB878;}
+			.fly-list li h2 a {display: inline-block;max-width: 80%;padding-right: 10px;font-size: 16px; white-space: nowrap;text-overflow: ellipsis;}
+			
+			.fly-list-info{position: relative; font-size: 13px; color: #999;}
+			.fly-list-info>*{padding-right: 15px;}
+			.fly-list-info a[link]{color: #999;}
+			.fly-list-info a[link]:hover{color: #5FB878;}
+			.fly-list-info .icon-renzheng{position: relative; top: 1px; margin-right: 3px;}
+			.fly-list-info .fly-badge-vip{position: relative; margin-left: 2px;}
+			.fly-list-kiss{color: #FF5722;}
+			.fly-list-nums{position: absolute; right: 0; top: 0; padding-right: 0!important;}
+			.fly-list-nums i{position: relative; padding: 0 3px 0 15px;}
+			
+			.fly-list-badge{position: absolute; right: 15px; top: 15px; font-size: 0;}
+			.fly-list-badge .layui-badge{margin-left: 5px; border-radius: 2px; font-size: 12px;}
+			
+			.layui-badge{position: relative;display: inline-block;padding: 0 6px;font-size: 12px;text-align: center;background-color: #FF5722;color: #fff;border-radius: 2px;}
+			
+			.layui-btn-disabled, .layui-btn-disabled:active, .layui-btn-disabled:hover{border: 1px solid #e6e6e6;background-color: #FBFBFB;color: #C9C9C9;cursor: not-allowed;opacity: 1;}
+			
+			.dis{display: none;}
+		</style>
+	</head>
+
+	<body>
+		<div class="main main-list">
+			<div class="line header">
+				<a class="fly-nav-avatar" href="javascript:;" id="LAY_header_avatar">
+					<img src="">
+					<cite class="layui-hide-xs"></cite> 
+				</a>
+				<button class="bg-warm"></button>
+				<span style="display: inline-block;font-size: 12px; vertical-align: middle;margin-left: 30px; color: #999999;">
+					<span>连续签到: <span class="num warm days"></span>天</span>
+					<br />
+					<span>当前飞吻: <span class="num warm feiwen"></span>吻</span>
+				</span>
+			</div>
+			
+			<div class="line zd">
+				<h4>置顶: </h4>
+				<ul class="fly-list">
+					<li></ul>
+			</div>
+
+			
+			<div class="line zx">
+				<h4>最新提问: </h4>
+				<ul class="fly-list"></ul>
+			</div>
+			
+		</div>
+	</body>
+
+</html>
